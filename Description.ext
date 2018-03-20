@@ -1,8 +1,8 @@
 //------------------------- On Load
 
 author = AhoyWorld & MF;					// Visible when loading mission
-onLoadName = "MF Invade & Annex 3.3.9";						// Visible when loading mission
-OnLoadMission = "MF Invade and Annex 3.3.9";
+onLoadName = "MF Invade & Annex 3.3.9a";						// Visible when loading mission
+OnLoadMission = "MF Invade and Annex 3.3.9a";
 loadScreen = "Media\LoadingScreen\splash.jpeg";				// Visible when loading mission
 overviewPicture = "Media\LoadingScreen\splash.jpeg";			// Visible when selecting mission
 

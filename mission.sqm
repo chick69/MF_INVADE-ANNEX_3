@@ -5,25 +5,25 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=641;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=4064;
+		nextID=4069;
 	};
 	class MarkerIDProvider
 	{
-		nextID=261;
+		nextID=264;
 	};
 	class LayerIndexProvider
 	{
-		nextID=7729;
+		nextID=7762;
 	};
 	class Camera
 	{
-		pos[]={20829.967,33.754158,7282.811};
-		dir[]={-0.76365179,-0.46179867,-0.45124546};
-		up[]={-0.39758536,0.88697571,-0.23493554};
-		aside[]={-0.50873506,8.9162495e-007,0.86094421};
+		pos[]={28264.713,26.146042,3694.3308};
+		dir[]={0.92814052,-0.36443576,-0.076347217};
+		up[]={0.36323389,0.9312107,-0.029877536};
+		aside[]={-0.081983604,-8.8269189e-008,-0.99668264};
 	};
 };
 binarizationWanted=0;
@@ -4897,7 +4897,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this allowDamage false; " \n "this enableSimulation false; " \n "" \n "    " \n "this addAction [""<t color='#3f3fff'>Recycle UAV crew</t>"",""scripts\misc\actions\uavFix_switch.sqf"",[],21,true,true,"""",'((vehicle player) == player) && ((player distance _target) < 5) && (player isKindOf ""B_soldier_UAV_F"")'];   " \n "this addAction [""<t color='#009ACD'>Teleport To FOB Martian</t>"",""cutText ['','BLACK OUT'];sleep 2;[player,'AAC_Airfield'] remoteExec ['AW_fnc_baseTeleport',2];sleep 1; cutText ['','BLACK IN'];"","""",0,false,true,"""",""('AAC_Airfield' in controlledZones)""]; " \n "this addAction [""<t color='#009ACD'>Teleport To FOB Marathon</t>"",""cutText ['','BLACK OUT'];sleep 2;[player,'Stadium'] remoteExec ['AW_fnc_baseTeleport',2];sleep 1; cutText ['','BLACK IN'];"","""",0,false,true,"""",""('Stadium' in controlledZones)""]; " \n "this addAction [""<t color='#009ACD'>Teleport To FOB Guardian</t>"",""cutText ['','BLACK OUT'];sleep 2;[player,'Terminal'] remoteExec ['AW_fnc_baseTeleport',2];sleep 1; cutText ['','BLACK IN'];"","""",0,false,true,"""",""('Terminal' in controlledZones)""]; " \n "this addAction [""<t color='#009ACD'>Teleport To FOB Dirt Track</t>"",""cutText ['','BLACK OUT'];sleep 2;[player,'Selakano_Town'] remoteExec ['AW_fnc_baseTeleport',2];sleep 1; cutText ['','BLACK IN'];"","""",0,false,true,"""",""('Selakano_Town' in controlledZones)""]; " \n "this addAction [""<t color='#009ACD'>Teleport To FOB Last Stand</t>"",""cutText ['','BLACK OUT'];sleep 2;[player,'Molos_Airfield'] remoteExec ['AW_fnc_baseTeleport',2];sleep 1; cutText ['','BLACK IN'];"","""",0,false,true,"""",""('Molos_Airfield' in controlledZones)""];" \n "this addAction [""<t color='#009ACD'>Teleport to USS freedom</t>"", " \n """cutText ['','BLACK OUT'];sleep 2;_freedompos = getPosWorld Freedom; " \n "player setPosWorld (getPosWorld carrierTPPosObj);sleep 1; cutText ['','BLACK IN'];"", " \n """"",100,false,true,"""",""typeOf player == 'B_Pilot_F'||typeOf player == 'B_Helipilot_F'||typeOf player == 'B_soldier_UAV_F' || (_this getVariable 'isZeus')""]; " \n "";
+								init="this allowDamage false; " \n "this enableSimulation false; " \n "" \n "    " \n "this addAction [""<t color='#3f3fff'>Recycle UAV crew</t>"",""scripts\misc\actions\uavFix_switch.sqf"",[],21,true,true,"""",'((vehicle player) == player) && ((player distance _target) < 5) && (player isKindOf ""B_soldier_UAV_F"")'];   " \n "this addAction [""<t color='#009ACD'>Teleport To FOB Martian</t>"",""cutText ['','BLACK OUT'];sleep 2;[player,'AO_AAC_Airfield'] remoteExec ['AW_fnc_baseTeleport',2];sleep 1; cutText ['','BLACK IN'];"","""",0,false,true,"""",""('AO_AAC_Airfield' in controlledZones)""]; " \n "this addAction [""<t color='#009ACD'>Teleport To FOB Marathon</t>"",""cutText ['','BLACK OUT'];sleep 2;[player,'AO_Stadium'] remoteExec ['AW_fnc_baseTeleport',2];sleep 1; cutText ['','BLACK IN'];"","""",0,false,true,"""",""('AO_Stadium' in controlledZones)""]; " \n "this addAction [""<t color='#009ACD'>Teleport To FOB Guardian</t>"",""cutText ['','BLACK OUT'];sleep 2;[player,'AO_Terminal'] remoteExec ['AW_fnc_baseTeleport',2];sleep 1; cutText ['','BLACK IN'];"","""",0,false,true,"""",""('AO_Terminal' in controlledZones)""]; " \n "this addAction [""<t color='#009ACD'>Teleport To FOB Dirt Track</t>"",""cutText ['','BLACK OUT'];sleep 2;[player,'AO_Selakano_Town'] remoteExec ['AW_fnc_baseTeleport',2];sleep 1; cutText ['','BLACK IN'];"","""",0,false,true,"""",""('AO_Selakano_Town' in controlledZones)""]; " \n "this addAction [""<t color='#009ACD'>Teleport To FOB Last Stand</t>"",""cutText ['','BLACK OUT'];sleep 2;[player,'AO_Molos_Airfield'] remoteExec ['AW_fnc_baseTeleport',2];sleep 1; cutText ['','BLACK IN'];"","""",0,false,true,"""",""('AO_Molos_Airfield' in controlledZones)""];" \n "this addAction [""<t color='#009ACD'>Teleport to USS freedom</t>"", " \n """cutText ['','BLACK OUT'];sleep 2;_freedompos = getPosWorld Freedom; " \n "player setPosWorld (getPosWorld carrierTPPosObj);sleep 1; cutText ['','BLACK IN'];"", " \n """"",100,false,true,"""",""typeOf player == 'B_Pilot_F'||typeOf player == 'B_Helipilot_F'||typeOf player == 'B_soldier_UAV_F' || (_this getVariable 'isZeus')""]; " \n "";
 								name="maintenanceTerminal";
 								disableSimulation=1;
 							};
