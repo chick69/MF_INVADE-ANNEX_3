@@ -27,6 +27,7 @@ artySorcher allowDamage False;
 artySorcher allowFleeing 0;
 
 controlledZones = [];
+controlledZones pushBack "BASE";
 publicVariable "controlledZones";
 
 CVN_CIWS_Active = false;

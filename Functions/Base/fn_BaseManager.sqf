@@ -43,7 +43,7 @@ _arsenalBox pushBack _arsenal;
 //stuf to be set on every box:
 
     //teleport:
-	[_arsenal, ["<t color='#127a00'>Teleport To Main Base</t>","cutText ['','BLACK OUT'];sleep 2;[player,'BASE'] remoteExec ['AW_fnc_baseTeleport',2];sleep 1; cutText ['','BLACK IN'];","",-80,false,true,"","('BASE' in controlledZones)"]] remoteExec ["addAction", -2, true];
+	[_arsenal, ["<t color='#127a00'>Teleport To Main Base</t>","cutText ['','BLACK OUT'];sleep 2;[player,'BASE'] remoteExec ['AW_fnc_baseTeleport',2];sleep 1; cutText ['','BLACK IN'];","",-80,false,true]] remoteExec ["addAction", -2, true];
 	[_arsenal, ["<t color='#127a00'>Teleport to USS freedom</t>",
 			   "cutText ['','BLACK OUT'];sleep 2;_freedompos = getPosWorld Freedom;
 			   player setPosWorld (getPosWorld carrierTPPosObj);sleep 1; cutText ['','BLACK IN'];",
