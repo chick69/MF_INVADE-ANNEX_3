@@ -76,7 +76,7 @@ ghst_halo = compile preprocessfilelinenumbers "MF\ghst_halo.sqf";               
 [] execVm "scripts\vehicle\crew\crew.sqf"; 			// vehicle HUD
 [] execVM "scripts\misc\QS_icons.sqf";				// Icons
 [] execVM "scripts\misc\diary.sqf";					// diary
-[] execVM "MF\mf_pilotCheck.sqf";				    // pilots only
+//[] execVM "MF\mf_pilotCheck.sqf";				    // pilots only
 [] execVM "scripts\misc\earplugs.sqf";				//Earplugs from the start
 [] execVM "Functions\IgiLoad\IgiLoadInit.sqf";
 
@@ -175,10 +175,10 @@ player addAction ["<t color='#ff0000'>Clear vehicle inventory</t>",{[] call AW_f
 [] spawn {
     sleep 5;
     [player] remoteExecCall ["initiateZeusByUID", 2];
-	if !(player getVariable "isAdmin") then {execVM "MF\mf_pilotCheck.sqf";};				    // pilots only
 	sleep 2;
 	if (player getVariable "isAdmin") then {execVM "scripts\adminScripts.sqf";};
 	if ((player getVariable "isZeus") && !(player getVariable "isAdmin")) then {execVM "scripts\zeusScripts.sqf";};
+	if !(player getVariable "isAdmin") then {execVM "MF\mf_pilotCheck.sqf";};				    // pilots only
 };
 
 player addEventHandler ["FiredMan", {
