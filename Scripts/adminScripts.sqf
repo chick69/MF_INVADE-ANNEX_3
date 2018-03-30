@@ -1,3 +1,6 @@
+if (isnil "ADM_MENU") then
+{
+ADM_MENU = true;
 god = 1;
 tele = 1;
 hide = 1;
@@ -337,3 +340,5 @@ MMAnimCaptive2 = [
 ];
    
 showCommandingMenu "#USER:MMOPEN"; },[],-400, false, true];
+
+};
