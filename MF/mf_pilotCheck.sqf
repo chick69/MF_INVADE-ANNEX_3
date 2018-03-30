@@ -15,7 +15,7 @@ _iamtransport = ({typeOf player == _x} count _pilots_transport) > 0;
 _iamCopilotArmed = ({typeOf player == _x} count _CoPilots) > 0;
 _iamCopilot = ({typeOf player == _x} count _CoPilots) > 0;
 
-if (player getVariable "isAdmin") exitWith {};
+if (player getVariable "isAdmin") then {exitWith {};};
 
 while { true } do {
 	_oldvehicle = vehicle player;
