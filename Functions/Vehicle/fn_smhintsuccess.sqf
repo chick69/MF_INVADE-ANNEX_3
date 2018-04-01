@@ -26,7 +26,6 @@ A reward will be picked from this array, first entery is the display name, secon
 Some rewards are edited after they are spawned.
 
 The spawn rate for randomly selected rewards can be messed with by putting rewards in here multiple times.
-*/
 smRewards = [
     //Jets
     ['an A-164 Wipeout (CAS)', 'B_Plane_CAS_01_dynamicLoadout_F'],
@@ -833,4 +832,7 @@ if !(isNil "_reward" ) then {
     };
 
 };
+*/
 
+_completeText = "<t align='center'><t size='2.2'>Side Mission</t><br/><t size='1.5' color='#08b000'>COMPLETE</t><br/>____________________<br/>Fantastic job, lads! The OPFOR stationed on the island won't last long if you keep that up!<br/><br/>";
+[_completeText] remoteExec ["AW_fnc_globalHint",0,false];

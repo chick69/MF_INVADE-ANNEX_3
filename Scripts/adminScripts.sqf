@@ -6,7 +6,7 @@ tele = 1;
 hide = 1;
 
 VONWarning = 	parseText "<t align='center' font='PuristaBold' ><t size='1.4' color='#ff0000'>WARNING to ALL</t><t size='0.9'><br />No VON in SIDE, COMMAND, GLOBAL.<br />Constant VON in these channels will result in kick. <br />Use Direct, Vehicle or Group channel for VON chat or type it.</t></t>";
-TSAdress = 		parseText "<t align='center' font='PuristaBold' ><t size='1.4'>MF TEAMSPEAK</t><t size='0.9'><br />ts.mercenaires-francais.fr/t></t>";
+TSAdress = 		parseText "<t align='center' font='PuristaBold' ><t size='1.4'>MF TEAMSPEAK</t><t size='0.9'><br />ts.mercenaires-francais.fr </t></t>";
 FFWarning = 	parseText "<t align='center' font='PuristaBold' ><t size='1.4' color='#ff0000'>WARNING to ALL</t><t size='0.9'><br /> Check your targets,<br />Continued FF will result in Kick or Ban.<br />Not sure? Dont fire! </t></t>";
 WhatsUp = 		parseText "<t align='center' font='PuristaBold' ><t size='1.4'>ADMIN</t><t size='0.9'><br />What's the issue?</t></t>";
 ZeusSpam = 		parseText "<t align='center' font='PuristaBold' ><t size='1.4' color='#ff0000'>WARNING to ALL</t><t size='0.9'><br />Do not spam the zeus key (Y)<br /> This will result in either a lightning bolt landing on your head, a kick or a ban.</t></t>";
